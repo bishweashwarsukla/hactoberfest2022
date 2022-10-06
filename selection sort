@@ -1,0 +1,16 @@
+#include<iostream>
+Using namespace std;
+Int main()
+Void selectionsort(vector <int> & arr, int n)
+{    
+         for(int I = 0; i<n-1;i++)
+       {
+               Int minindex = I;
+               For(int j = i+1;j<n;j++)
+               {
+                      If(arr[j]<arr[minindex])
+                          Minindex=j;
+                 }
+                 Swap(arr[minindex] , arr[i];
+    }
+}
