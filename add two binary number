@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+#include<iostream>
+using namespace std;
+        int main(){
+        string a;string b;string result;
+        cin>>a>>b;
+         int i=a.size();int j=b.size();int carry=0;
+        while(i>0||j>0||carry==1){
+           if(i>0) carry+=a[--i]-'0';
+           if(j>0 ) carry+=b[--j]-'0';
+            result+=char(carry%2+'0');
+            carry=carry/2;
+        }
+        reverse(result.begin(),result.end());
+        cout<<result<<endl;
+        return 0;
+
+
+
+
+    }
