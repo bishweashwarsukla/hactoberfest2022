@@ -12,18 +12,17 @@
 - Fork this repo (button on top).
 - Clone on your local machine.
 
-        git clone https://github.com/fineanmol/Annoying-submit-button.git
+        git clone https://github.com/bishweashwarsukla/hactoberfest2022.git
 - Navigate to the project directory.
 
-        cd Annoying-submit-button
+        cd hactoberfest2022
 - Add a new remote branch 
 
-        git remote add develop https://github.com/{YOUR_USERNAME}/Annoying-submit-button
+        git remote add develop https://github.com/{YOUR_USERNAME}/hactoberfest2022
 
 - Create a new *branch*
 
         git checkout -b new-branch
-- Add your Name to ``contributors/contributorsList.js``
 
 - Add all the changes that you have made
 
