@@ -1,34 +1,26 @@
 #include <iostream>
 using namespace std;
-
-int LinearSearch(int arr[], int size, int key) {
-    for(int i=0; i<size; i++) {
-        if(arr[i] == key)
+ 
+int search(int arr[], int N, int x)
+{
+    int i;
+    for (i = 0; i < N; i++)
+        if (arr[i] == x)
             return i;
-    }
-
     return -1;
 }
-
-int main() {
-    int arr[100], n, key;
-    cout<<"\nEnter the size of array: ";
-    cin>>n;
-
-    cout<<"\nEnter the elements of array: ";
-    for(int i=0; i<n; i++) {
-        cin>>arr[i];
-    }
-
-    cout<<"\nEnetr the key to search: ";
-    cin>>key;
-
-    int position = LinearSearch(arr, n, key);
-
-    if(position != -1)
-        cout<<endl<<"The element "<<key<<" is found in the array at position no. "<<position+1;
-    else
-        cout<<endl<<"The element is not found in the array";
-
+ 
+// Driver's code
+int main(void)
+{
+    int arr[] = { 2, 3, 4, 10, 40 };
+    int x = 10;
+    int N = sizeof(arr) / sizeof(arr[0]);
+ 
+    // Function call
+    int result = search(arr, N, x);
+    (result == -1)
+        ? cout << "Element is not present in array"
+        : cout << "Element is present at index " << result;
     return 0;
 }
