@@ -1,4 +1,6 @@
-public class InsertMid {  
+package Java.datastructure.impl;
+
+public class InsertMid {
   
     //Represent a node of the doubly linked list  
   

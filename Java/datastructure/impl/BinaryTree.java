@@ -1,3 +1,5 @@
+package Java.datastructure.impl;
+
 import java.util.ArrayList;
 
 public class BinaryTree {
@@ -60,7 +62,7 @@ public class BinaryTree {
         n.root.right = new Node(46);
         n.root.left.left = new Node(27);
         n.root.left.right=new Node(30);
-        System.out.println("Left View of BinaryTree");
+        System.out.println("Left View of Java.datastructure.BinaryTree");
         leftview(n.root);
         System.out.println("Right view of Binary Tree");
         rightview(n.root);

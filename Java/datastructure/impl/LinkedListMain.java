@@ -1,4 +1,5 @@
-# This code explains how linkedlist works!!
+package Java.datastructure.impl;
+// This code explains how linkedlist works!!
 class Node {
 
     int data;

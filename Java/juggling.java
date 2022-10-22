@@ -1,3 +1,5 @@
+package Java;
+
 public class PrepInsta
 {
        public static int hcf(int a, int c) 
@@ -27,7 +29,7 @@ public class PrepInsta
             } 
             arr[l] = temp; 
         }} 
-     //  Main function
+     //  Java.sort.Main function
     public static void main(String[] args) 
     { 
         int arr[] = { 10, 20 30, 40, 50, 60, 70 }; 

@@ -1,3 +1,5 @@
+package Java.sort;
+
 public class Quick_Sort {
 
     public static void swap(int[] arr, int i, int j) {

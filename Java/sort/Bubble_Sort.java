@@ -1,3 +1,5 @@
+package Java.sort;
+
 /*
 method 1:
     In this method we are comparing all the elements through the array eventhough it is sorted from end.(descending).

@@ -1,3 +1,5 @@
+package Java;
+
 public class Binary_to_decimal {
     public static void main(String[] args) {
         long n = 101;
