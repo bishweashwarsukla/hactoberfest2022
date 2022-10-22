@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 class Graph:
     def __init__(self,size):
         self.size = size
