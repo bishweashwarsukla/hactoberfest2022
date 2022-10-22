@@ -1,4 +1,6 @@
-package Java.sort;/*
+package Java.sort;
+
+/*
 In best case: we dont need to compare all element again which is already in sorted order.
 So we are introducing the flag variable which can say it is modified or not in j loop. If 
 flag is modified which means [swap & sort] happened if not every element in the loop is in sorted
