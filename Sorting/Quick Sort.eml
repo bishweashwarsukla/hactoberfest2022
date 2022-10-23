@@ -1,0 +1,80 @@
+MIME-Version: 1.0
+Date: Sun, 23 Oct 2022 19:46:08 +0530
+From: Sanjukta Goswami <sanjukta1goswami@gmail.com>
+Subject: Quick Sort
+Thread-Topic: Quick Sort
+Message-ID:
+ <CADSXYviiSrmETF=pnKCoTa4imwkSRAVwxgZqYocQSEDQmQLtOw@mail.gmail.com>
+To: "annukri5110nwd@gmail.com" <annukri5110nwd@gmail.com>
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="utf-8"
+
+<div dir=3D"ltr"><pre class=3D"gmail-aLF-aPX-K0-aPE" style=3D"font-family:&=
+quot;Courier New&quot;,Courier,monospace,arial,sans-serif; margin-top:0px; =
+margin-bottom:0px; white-space:pre-wrap; color:rgb(0,0,0); font-size:14px">=
+#include&lt;stdio.h&gt;
+int partition(int *arr,int s,int e){
+    int i,c=3D0,pivotindex;
+    int pivot=3Darr[s];
+    for(i=3Ds&#43;1;i&lt;=3De;i&#43;&#43;){
+        if(arr[i]&lt;=3Dpivot){
+            c&#43;&#43;;
+        }
+    }
+    pivotindex=3Ds&#43;c;
+
+    int temp;
+    temp=3Darr[pivotindex];
+    arr[pivotindex]=3Darr[s];
+    arr[s]=3Dtemp;
+
+
+    int j=3Ds,k=3De;
+    while(j&lt;pivotindex &amp;&amp; k&gt;pivotindex){
+        while(arr[j]&lt;=3Dpivot){
+            j&#43;&#43;;
+        }
+        while(arr[k]&gt;pivot){
+            k--;
+        }
+        if(s&lt;pivotindex&amp;&amp;k&gt;pivotindex){
+        temp=3Darr[i];
+        arr[i]=3Darr[j];
+        arr[j]=3Dtemp;
+            j&#43;&#43;;
+            k--;
+        }
+    }
+    return pivotindex;
+}
+void quicksort(int arr[],int s,int e){
+    if(s&gt;=3De){
+        return;
+    }
+    int p;
+    p=3Dpartition(arr,s,e);
+    quicksort(arr,s,p-1);
+    quicksort(arr,p&#43;1,e);
+}
+
+/*void swap(int arr[],int pivotindex,int s){
+    int temp;
+    temp=3Darr[pivotindex];
+    arr[pivotindex]=3Darr[s];
+    arr[s]=3Dtemp;
+}*/
+int main(){
+    int n,arr[10],i;
+    printf(&quot;How many numbers wants in array:&quot;);
+    scanf(&quot;%d&quot;,&amp;n);
+    printf(&quot;Enter %d numbers of array:&quot;,n);
+    for(i=3D0;i&lt;n;i&#43;&#43;){
+        scanf(&quot;%d&quot;,&amp;arr[i]);
+    }
+    quicksort(arr,0,n-1);
+    printf(&quot;Sorted array:&quot;);
+    for(i=3D0;i&lt;n;i&#43;&#43;){
+        printf(&quot;%d  &quot;,arr[i]);
+    }
+    return 0;
+}</pre></div>
