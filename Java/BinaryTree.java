@@ -69,7 +69,8 @@ public class BinaryTree {
 
 }
  class Node{
-	Node right,left;
+	Node right;
+	Node left;
 	int data;
 	Node(int data)
 	{
