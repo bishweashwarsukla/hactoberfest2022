@@ -1,0 +1,16 @@
+def Push(x,stack1,stack2):
+    stack1.append(x)
+    #return stack1,stack2
+#Function to pop an element from queue by using 2 stacks.
+def Pop(stack1,stack2):
+    if len(stack1)==0:
+        return -1
+    while len(stack1)!=0:
+        a = stack1[-1]
+        stack1.pop()
+        stack2.append(a)
+    a = stack2.pop()
+    while len(stack2)!=0:
+        stack1.append(stack2[-1])
+        stack2.pop()
+    return a
