@@ -1,4 +1,5 @@
-#include <iostream>
+/*Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). */
+#include<bits/stdc++.h>
 using namespace std;
 
 void SortAscending(int arr[], int size) {
@@ -41,8 +42,9 @@ int BinarySearch(int arr[], int size, int key) {
 
 int main() {
     int arr[100], n, key;
-
-    cout<<"\nEnter the size of array: ";
+    cout<<"Lets first understand what binary search actually is: Binary Search is a searching algorithm used in a sorted array by repeatedly dividing the search interval in half. The idea of binary search is to use the information that the array is sorted and reduce the time complexity to O(Log n). "<<endl;
+    
+    cout<<"\nEnter the size of array:";
     cin>>n;
 
     cout<<"\nEnter the elements of array: ";
@@ -61,7 +63,6 @@ int main() {
     }
 
     int index = BinarySearch(arr, n, key);
-
     if(index == -1)
         cout<<"\nThe key element "<<key<<" is not found in the array.\n";
     else    
